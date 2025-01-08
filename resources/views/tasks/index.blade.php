@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
 <h1>Task list</h1>
 <a href="{{ route('tasks.create') }}">Create Task</a>

@@ -1,7 +1,7 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
 <h2>Create Task</h2>
-<form action="{{route('task.store')}}" method="post">
+<form action="{{route('tasks.store')}}" method="post">
 @csrf
 <label for="title">Title</label>
 <input type="text" id="title" name="title" required>

@@ -22,7 +22,7 @@ class TasksController extends Controller
             'due_date' => 'required|date',
         ]);
     
-        Task::create($request->except('_token'));
+        Task::create($validatedData);
     
         return redirect()->route('tasks.index')->with('success', 'Task created successfully!');
     
